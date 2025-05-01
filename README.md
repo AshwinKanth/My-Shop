@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    My Store
 
-## Available Scripts
+## Objective
 
-In the project directory, you can run:
+    The purpose of this assignment is to create a fully functional e-commerce frontend using React.js, demonstrating proficiency in front-end development principles, responsive design, and state management. The goals are to build a visually appealing and user-friendly shopping experience, implement core e-commerce functionalities, and showcase the ability to integrate with external APIs. Expected learning outcomes include: mastering React.js fundamentals, applying Tailwind CSS for styling, utilizing React hooks for state management, handling API interactions, and understanding deployment processes.
 
-### `npm start`
+## Development
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    git clone <github repository link>  
+    npm install
+    npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+    React JS, Tailwind CSS, React hooks for state management
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Completion Instructions
 
-### `npm run build`
+### Functionality
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Must Have
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.  Home Page Design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Create an attractive, responsive home page with:
+    - Header with logo, navigation, and cart icon
+    - Hero section
+    - Featured products section
+    - Footer
 
-### `npm run eject`
+2.  Product Listing Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - Fetch products from a public dummy API (e.g., https://fakestoreapi.com/products)
+    - Display products in a responsive grid
+    - Each product card should show:
+    - Image
+    - Title
+    - Price
+    - "Add to Cart" button
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Mini Cart Component
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- When products are added to cart, show a mini cart dropdown when the cart icon is clicked
+- Mini cart should display:
+    - List of added products (image, title, quantity, price)
+    - Subtotal
+    - "View Cart" button
+    - "Checkout" button (can be disabled)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Full Cart Page
 
-## Learn More
+- Accessible when clicking "View Cart" from mini cart
+- Show all cart items with:
+    - Product details (image, title, price)
+    - Quantity adjuster (+, - buttons)
+    - Remove item option
+    - Order summary (subtotal, shipping, total)
+    - Proceed to checkout button
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Nice to Have
 
-### Code Splitting
+- Implement product search functionality
+- Add product filtering/sorting
+- Persist cart to localStorage
+- Add animations/transitions
+- Implement dark mode toggle
+- Write unit tests for critical components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Submission Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Must Have
 
-### Making a Progressive Web App
+- GitHub repository with your code
+- README with:
+    - Setup instructions
+    - Brief explanation of your approach
+    - Any assumptions you made
+- Live demo (Vercel, Netlify, etc.) if possible
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Design files
 
-### Deployment
+    Home, Header, Footer, CartPage, MiniCart, ProductCard, ProductList
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### APIs
 
-### `npm run build` fails to minify
+    Products List
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Third-party packages
+
+    Icons (react-icons)
+    Tailwind CSS (styling)
